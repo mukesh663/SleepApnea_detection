@@ -103,11 +103,11 @@ while True:
                 msg = EmailMessage()
                 mail = smtplib.SMTP('smtp.gmail.com', 587)
                 mail.starttls()
-                mail.login("amrita.researchwork@gmail.com","amrita_research")
+                mail.login("from_mail@gmail.com","password")
                 sub="Motion not detected"
                 body="The patient is not moving. Please check immediately."
                 msg=f'Subject: {sub} \n {body}'
-                mail.sendmail("amrita.researchwork@gmail.com", "mukeshkvmj@gmail.com", msg) 
+                mail.sendmail("from_mail@gmail.com", "your_email@gmail.com", msg) 
 
             iterations+=1
         else:
